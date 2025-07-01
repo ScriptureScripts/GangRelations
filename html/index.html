@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gang Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="arken-theme">
+        <header class="arken-header">
+            <img src="Arken.png" alt="Arken Logo" class="arken-logo" />
+            <span class="arken-watermark">Arken Networks</span>
+        </header>
+        <aside id="gang-list">
+            <!-- Gang list here -->
+        </aside>
+        <main>
+            <nav>
+                <button id="home-btn">Home</button>
+                <button id="logs-btn">Logs</button>
+                <button id="stash-btn">Stash</button>
+                <button id="bossmenu-btn">Boss Menu</button>
+            </nav>
+            <section id="home" class="tab active">
+                <h1>Gang Activity</h1>
+                <div id="activity-feed"></div>
+            </section>
+            <section id="logs" class="tab">
+                <h1>Logs</h1>
+                <div id="logs-feed"></div>
+            </section>
+            <section id="stash" class="tab">
+                <h1>Stash</h1>
+                <div id="stash-feed"></div>
+            </section>
+            <section id="bossmenu" class="tab">
+                <h1>Boss Menu</h1>
+                <div id="bossmenu-gangmanage"></div>
+                <div id="bossmenu-roles"></div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

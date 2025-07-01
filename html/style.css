@@ -1,0 +1,136 @@
+body {
+    background: linear-gradient(135deg, #0a183d 0%, #193a5c 100%);
+    color: #eaf1ff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+}
+
+.arken-header {
+    display: flex;
+    align-items: center;
+    background: rgba(10, 24, 61, 0.95);
+    padding: 18px 24px 8px 24px;
+    border-bottom: 2px solid #1e2e50;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+.arken-logo {
+    height: 54px;
+    width: auto;
+    margin-right: 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px #0005;
+}
+.arken-watermark {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #7bb2ff;
+    text-shadow: 0 2px 8px #0006;
+    user-select: none;
+}
+
+.arken-theme main {
+    background: rgba(20, 40, 80, 0.98);
+    border-radius: 16px;
+    margin: 36px auto 0 auto;
+    padding: 32px 36px 36px 36px;
+    max-width: 800px;
+    box-shadow: 0 8px 48px #0a183d99;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+nav button {
+    background: linear-gradient(90deg, #1a3a7c 0%, #274b8e 100%);
+    color: #eaf1ff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #0004;
+    transition: background 0.2s, color 0.2s;
+}
+nav button:hover, nav button.active {
+    background: #3b6edc;
+    color: #fff;
+}
+
+.tab {
+    display: none;
+    background: rgba(16, 32, 64, 0.98);
+    border-radius: 12px;
+    padding: 28px 24px;
+    box-shadow: 0 2px 16px #0003;
+}
+.tab.active {
+    display: block;
+}
+
+#logs-feed, #stash-feed, #activity-feed, #bossmenu-gangmanage, #bossmenu-roles {
+    background: rgba(24, 48, 96, 0.85);
+    border-radius: 8px;
+    padding: 18px 18px 18px 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px #0002;
+}
+
+input, select {
+    background: #1c2c4a;
+    color: #eaf1ff;
+    border: 1px solid #375b8a;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    margin-right: 8px;
+}
+button {
+    background: linear-gradient(90deg, #2550a3 0%, #2e6fdc 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 1px 6px #0003;
+    transition: background 0.2s, color 0.2s;
+}
+button:hover {
+    background: #3b6edc;
+}
+
+/* Toasts and modals */
+div[style*="position: fixed"][style*="z-index: 10001"],
+div[style*="position: fixed"][style*="z-index: 10010"] {
+    background: linear-gradient(135deg, #0a183d 60%, #193a5c 100%);
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 32px #0008;
+    border: 1.5px solid #254e8a;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #142850;
+}
+::-webkit-scrollbar-thumb {
+    background: #254e8a;
+    border-radius: 8px;
+}
+
+#app { display: flex; height: 100vh; }
+#gang-list { width: 220px; background: #181818; padding: 10px; overflow-y: auto; }
+main { flex: 1; display: flex; flex-direction: column; }
+nav { background: #333; padding: 10px; }
+nav button { margin-right: 10px; }
+.tab { display: none; padding: 20px; }
+.tab.active { display: block; }
+#activity-feed, #logs-feed { background: #292929; padding: 10px; border-radius: 8px; min-height: 300px; }
